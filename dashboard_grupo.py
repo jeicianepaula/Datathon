@@ -49,8 +49,8 @@ df_concat['FASE'] = df_concat['FASE'].astype(float).round(0).astype(int)
 # Initialize the Dash app
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css', "https://passosmagicos.org.br/wp-content/themes/Divi/style.css?ver=4.0.9"]
-app = dash.Dash(external_stylesheets=external_stylesheets)
-# app = dash.Dash(__name__)
+app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+server = app.server
 
 # Define the layout of the app
 app.layout = html.Div([
