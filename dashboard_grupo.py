@@ -698,4 +698,4 @@ def update_distribuicao_ponto_virada_pedra_ano(_):
     fig.update_traces(textposition='outside')
     return fig
 
-app.run(debug=True)
+app.run()
